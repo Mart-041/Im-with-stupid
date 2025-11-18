@@ -61,8 +61,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-            1: Nenne einen berühmten politischen Gefangenen aus der
-            Geschichte der Menschheit von Anbeginn der Zeit bis heute.
+            1: Welches Tor aus dem Video sollte den Puskas Award erhalten?
           </label>
           <br />
           <input
@@ -77,9 +76,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-            2: Gehe auf haft-ddr.de. Dort werden auf einer Karte
-            ehemalige Untersuchungshaftanstalten angezeigt: Nenne eine
-            Haftanstalt/Ort, der dort angezeigt wird.
+            2: 2. Du kannst mit einem Fingerschnippen dafür sorgen, dass die Person sofort ihr Amt niederlegen muss und keine politische Macht mehr hat. Welche von den drei Personen verliert ihr Amt: Putin, Trump oder Netanjahu?
           </label>
           <br />
           <input
@@ -94,8 +91,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-            3: Welchen inaktiven/ehemaligen Sportforen-User oder Userin
-            vermisst ihr am meisten?
+            3: Nenne die beste Schauspielerin aller Zeiten.
           </label>
           <br />
           <input
@@ -110,8 +106,9 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-            4: Nenne einen User/eine Userin, die gerne lange Beiträge
-            schreibt.
+            4: Wo sollten die Olympischen Sommerspiele 2036 stattfinden?
+
+
           </label>
           <br />
           <input
@@ -125,7 +122,8 @@ export default function Home() {
         </div>
 
         <div style={{ marginBottom: 12 }}>
-          <label>5: Wer ist bigger: Hertha oder Bayern?</label>
+          <label>5: 5. Ihr könnt/müsst/dürft einen der 7 Forenbereiche (Fussball, Basketball, Tennis, Boxen, Wintersport, Weitere Sportarten, Community)
+ löschen. Welchen löscht ihr?  </label>
           <br />
           <input
             required
