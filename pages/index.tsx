@@ -106,7 +106,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-4. Nenne eine berühmte Person, auf die ein Attentat oder mehrere Attentate verübt worden sind. Egal ob diese "erfolgreich" waren oder nicht.
+4. Nenne eine berühmte Person auf die ein Attentat oder mehrere Attentate verübt worden sind. Egal ob diese "erfolgreich" waren oder nicht.
 
 
 
