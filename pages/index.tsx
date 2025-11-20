@@ -76,7 +76,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-2. Welche Person nimmst du aus dem Forum mit, wenn du doch in das Land aus Frage 1 reisen musst?
+2. Welche Person nimmst du als mentale und/oder körperliche Stütze aus dem Forum mit, wenn du doch in das Land aus Frage 1 reisen musst?
           </label>
           <br />
           <input
