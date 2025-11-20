@@ -61,7 +61,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-            1: Welches Tor aus dem Video sollte den Puskas Award erhalten?
+            1. In welches Land würdet ihr aktuell auf keinen Fall reisen!
           </label>
           <br />
           <input
@@ -76,7 +76,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-            2: 2. Du kannst mit einem Fingerschnippen dafür sorgen, dass die Person sofort ihr Amt niederlegen muss und keine politische Macht mehr hat. Welche von den drei Personen verliert ihr Amt: Putin, Trump oder Netanjahu?
+2. Welche Person nimmst du aus dem Forum mit, wenn du doch in das Land aus Frage 1 reisen musst?
           </label>
           <br />
           <input
@@ -91,7 +91,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-            3: Nenne die beste Schauspielerin aller Zeiten.
+           3. Welches Kacktor aus dem Video war am Kackigsten?
           </label>
           <br />
           <input
@@ -106,7 +106,8 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-            4: Wo sollten die Olympischen Sommerspiele 2036 stattfinden?
+4. Nenne eine berühmte Person, auf die ein Attentat oder mehrere Attentate verübt worden sind. Egal ob diese "erfolgreich" waren oder nicht.
+
 
 
           </label>
@@ -122,8 +123,7 @@ export default function Home() {
         </div>
 
         <div style={{ marginBottom: 12 }}>
-          <label>5: 5. Ihr könnt/müsst/dürft einen der 7 Forenbereiche (Fussball, Basketball, Tennis, Boxen, Wintersport, Weitere Sportarten, Community)
- löschen. Welchen löscht ihr?  </label>
+          <label>5. Welcher Teil ist/war das beste FIFA Videospiel aller Zeiten? </label>
           <br />
           <input
             required
