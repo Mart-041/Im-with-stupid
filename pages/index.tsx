@@ -61,7 +61,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-            1. In welches Land würdet ihr aktuell auf keinen Fall reisen!
+1. Alle Menschen (tot und lebendig) leben wieder in ihrer Prime. Ihr könnt ein Konzert besuchen eines Künstlers, einer Künstlerin oder einer Band in ihrer Prime? Zu wem geht ihr ins Konzert?
           </label>
           <br />
           <input
@@ -76,7 +76,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-2. Welche Person nimmst du als mentale und/oder körperliche Stütze aus dem Forum mit, wenn du doch in das Land aus Frage 1 reisen musst?
+2. Nenne einen ehemaligen Hertha-Spieler.
           </label>
           <br />
           <input
@@ -91,7 +91,9 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-           3. Welches Kacktor aus dem Video war am Kackigsten?
+           3. Wer von den Teams sollte Deutscher Meister werden, wenn alle ehemaligen deutschen Meister eliminiert wären?
+Auswahl für Antworten: 
+RB Leipzig, 1899 Hoffenheim, SC Freiburg, Union Berlin, Augsburg, St. Pauli, Mainz, Heidenheim
           </label>
           <br />
           <input
@@ -106,10 +108,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-4. Nenne eine berühmte Person auf die ein Attentat oder mehrere Attentate verübt worden sind. Egal ob diese "erfolgreich" waren oder nicht.
-
-
-
+4. Bar oder Karte?
           </label>
           <br />
           <input
@@ -123,8 +122,7 @@ export default function Home() {
         </div>
 
         <div style={{ marginBottom: 12 }}>
-          <label>5. Welcher Teil ist/war das beste FIFA Videospiel aller Zeiten? </label>
-          <br />
+5. Was würdet ihr maximal für ein Kino-Ticket bezahlen wollen (nur volle € Beträge ohne Cent)? Das € Zeichen könnt ihr in der Antwort bitte weglassen          <br />
           <input
             required
             value={q.q5}
