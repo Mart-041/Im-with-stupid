@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const router = useRouter();
   const [player, setPlayer] = useState("");
-  const [round, setRound] = useState("1");
+  const [round, setRound] = useState("5");
   const [q, setQ] = useState({ q1: "", q2: "", q3: "", q4: "", q5: "" });
   const [sent, setSent] = useState(false);
   const [err, setErr] = useState<string | null>(null);
@@ -61,7 +61,8 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-1. Alle Menschen (tot und lebendig) leben wieder in ihrer Prime. Ihr könnt ein Konzert besuchen eines Künstlers, einer Künstlerin oder einer Band in ihrer Prime? Zu wem geht ihr ins Konzert?
+1. HSV oder St. Pauli?
+
           </label>
           <br />
           <input
@@ -76,8 +77,8 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-2. Nenne einen ehemaligen Hertha-Spieler.
-          </label>
+2. Welcher Torwart mit Debüt nach dem Jahr 2005 bis heute ist der schlechteste Torhüter von den aufgezählten? 
+Robert Enke, René Adler, Tim Wiese, Manuel Neuer, Ron-Robert Zieler, Marc-André ter Stegen, Roman Weidenfeller, Bernd Leno, Kevin Trapp, Alexander Nübel, Oliver Baumann          </label>
           <br />
           <input
             required
@@ -91,10 +92,9 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-           3. Wer von den Teams sollte Deutscher Meister werden, wenn alle ehemaligen deutschen Meister eliminiert wären?
-Auswahl für Antworten: 
-RB Leipzig, 1899 Hoffenheim, SC Freiburg, Union Berlin, Augsburg, St. Pauli, Mainz, Heidenheim
-          </label>
+3. Welche Sportart von den gleich aufgeführten aus den World Games würdest du gerne auch bei den Olympischen Spielen sehen? 
+
+Billard, Cheerleading, Flag Football, Frisbeesport, Kickboxen, Rettungsschwimmen, Squash, Tanzen          </label>
           <br />
           <input
             required
@@ -108,7 +108,8 @@ RB Leipzig, 1899 Hoffenheim, SC Freiburg, Union Berlin, Augsburg, St. Pauli, Mai
 
         <div style={{ marginBottom: 12 }}>
           <label>
-4. Bar oder Karte?
+4. Nenne eine Stadt, wo die Expo (Weltausstellung) schon mal stattgefunden hat. 
+
           </label>
           <br />
           <input
@@ -122,7 +123,7 @@ RB Leipzig, 1899 Hoffenheim, SC Freiburg, Union Berlin, Augsburg, St. Pauli, Mai
         </div>
 
         <div style={{ marginBottom: 12 }}>
-5. Was würdet ihr maximal für ein Kino-Ticket bezahlen wollen (nur volle € Beträge ohne Cent)? Das € Zeichen könnt ihr in der Antwort bitte weglassen          <br />
+5. Nenne zwei User, die sich überhaupt nicht ausstehen können. Oder es den Anschein macht, dass sie sich nicht abkönnen oder einen (oder mehrere) große Streitigkeiten hatten.      <br />
           <input
             required
             value={q.q5}
