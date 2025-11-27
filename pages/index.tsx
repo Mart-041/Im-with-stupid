@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     const p = (router.query.player as string) || "";
     setPlayer(p);
-    const r = (router.query.round as string) || "1";
+    const r = (router.query.round as string) || "6";
     setRound(r);
   }, [router.query.player, router.query.round]);
 
@@ -47,6 +47,7 @@ export default function Home() {
       <p>Bitte beantworte alle 5 Fragen. Andere sehen deine Antworten nicht.</p>
 
       <form onSubmit={onSubmit}>
+        {/* Spielername */}
         <div style={{ marginBottom: 12 }}>
           <label>Dein Sportforen-Name :</label>
           <br />
@@ -59,10 +60,10 @@ export default function Home() {
           />
         </div>
 
+        {/* Frage 1 */}
         <div style={{ marginBottom: 12 }}>
           <label>
-1. Welches Bier? Alt, Dunkel, Hell, Kölsch, Pils, Weizen...oder oder oder
-
+            1. Welches Bier? Alt, Dunkel, Hell, Kölsch, Pils, Weizen... oder oder oder
           </label>
           <br />
           <input
@@ -75,9 +76,20 @@ export default function Home() {
           />
         </div>
 
+        {/* Frage 2 – mit klickbarem Link */}
         <div style={{ marginBottom: 12 }}>
           <label>
-2. Ihr dürft ein Team aus der aktuellen 3. Liga in Deutschland in die Bundesliga verfrachten? Welches Team nehmt ihr? https://www.kicker.de/3-liga/tabelle         </label>
+            2. Ihr dürft ein Team aus der aktuellen 3. Liga in Deutschland in die Bundesliga verfrachten. 
+            Welches Team nehmt ihr?
+            <br />
+            <a
+              href="https://www.kicker.de/3-liga/tabelle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://www.kicker.de/3-liga/tabelle
+            </a>
+          </label>
           <br />
           <input
             required
@@ -89,11 +101,28 @@ export default function Home() {
           />
         </div>
 
+        {/* Frage 3 – mit zwei klickbaren Links */}
         <div style={{ marginBottom: 12 }}>
           <label>
-3. Ihr dürft ein Team aus der aktuellen österreichischen Bundesliga ODER der Super League aus der Schweiz in die Bundesliga verfrachten? Welches Team nehmt ihr? https://www.kicker.de/bundesliga-oesterreich/tabelle 
-
-https://www.kicker.de/super-league-schweiz/tabelle       </label>
+            3. Ihr dürft ein Team aus der aktuellen österreichischen Bundesliga ODER der Super League 
+            aus der Schweiz in die Bundesliga verfrachten? Welches Team nehmt ihr?
+            <br />
+            <a
+              href="https://www.kicker.de/bundesliga-oesterreich/tabelle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Österreichische Bundesliga Tabelle
+            </a>
+            <br />
+            <a
+              href="https://www.kicker.de/super-league-schweiz/tabelle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Schweizer Super League Tabelle
+            </a>
+          </label>
           <br />
           <input
             required
@@ -105,12 +134,13 @@ https://www.kicker.de/super-league-schweiz/tabelle       </label>
           />
         </div>
 
+        {/* Frage 4 */}
         <div style={{ marginBottom: 12 }}>
           <label>
-4. Für den Mai 2026 sind in Las Vegas die Enhanced Games geplant. Kurzum: Dort dürfen die Athletinnen und Athleten vollgedopt antreten: 
-
-Werdet ihr euch das Event anschauen (1) oder boykottieren(2)?
-
+            4. Für den Mai 2026 sind in Las Vegas die Enhanced Games geplant.
+            Kurzum: Dort dürfen die Athletinnen und Athleten vollgedopt antreten.
+            <br /><br />
+            Werdet ihr euch das Event anschauen (1) oder boykottieren (2)?
           </label>
           <br />
           <input
@@ -123,10 +153,17 @@ Werdet ihr euch das Event anschauen (1) oder boykottieren(2)?
           />
         </div>
 
+        {/* Frage 5 */}
         <div style={{ marginBottom: 12 }}>
-5. 5. Wie lange wird es Sportforen als Forum noch geben? 
-
-A) maximal bis 2035 B) maximal bis 2045 C) maximal bis 2055 D) 2056 oder länger  <br />
+          <label>
+            5. Wie lange wird es Sportforen als Forum noch geben?
+            <br />
+            A) maximal bis 2035 &nbsp;&nbsp;
+            B) maximal bis 2045 &nbsp;&nbsp;
+            C) maximal bis 2055 &nbsp;&nbsp;
+            D) 2056 oder länger
+          </label>
+          <br />
           <input
             required
             value={q.q5}
@@ -146,4 +183,3 @@ A) maximal bis 2035 B) maximal bis 2045 C) maximal bis 2055 D) 2056 oder länger
     </main>
   );
 }
-
