@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const router = useRouter();
   const [player, setPlayer] = useState("");
-  const [round, setRound] = useState("5");
+  const [round, setRound] = useState("6");
   const [q, setQ] = useState({ q1: "", q2: "", q3: "", q4: "", q5: "" });
   const [sent, setSent] = useState(false);
   const [err, setErr] = useState<string | null>(null);
@@ -61,7 +61,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-1. HSV oder St. Pauli?
+1. Welches Bier? Alt, Dunkel, Hell, Kölsch, Pils, Weizen...oder oder oder
 
           </label>
           <br />
@@ -77,8 +77,7 @@ export default function Home() {
 
         <div style={{ marginBottom: 12 }}>
           <label>
-2. Welcher Torwart mit Debüt nach dem Jahr 2005 bis heute ist der schlechteste Torhüter von den aufgezählten? 
-Robert Enke, René Adler, Tim Wiese, Manuel Neuer, Ron-Robert Zieler, Marc-André ter Stegen, Roman Weidenfeller, Bernd Leno, Kevin Trapp, Alexander Nübel, Oliver Baumann          </label>
+2. Ihr dürft ein Team aus der aktuellen 3. Liga in Deutschland in die Bundesliga verfrachten? Welches Team nehmt ihr? https://www.kicker.de/3-liga/tabelle         </label>
           <br />
           <input
             required
@@ -92,9 +91,9 @@ Robert Enke, René Adler, Tim Wiese, Manuel Neuer, Ron-Robert Zieler, Marc-Andr�
 
         <div style={{ marginBottom: 12 }}>
           <label>
-3. Welche Sportart von den gleich aufgeführten aus den World Games würdest du gerne auch bei den Olympischen Spielen sehen? 
+3. Ihr dürft ein Team aus der aktuellen österreichischen Bundesliga ODER der Super League aus der Schweiz in die Bundesliga verfrachten? Welches Team nehmt ihr? https://www.kicker.de/bundesliga-oesterreich/tabelle 
 
-Billard, Cheerleading, Flag Football, Frisbeesport, Kickboxen, Rettungsschwimmen, Squash, Tanzen          </label>
+https://www.kicker.de/super-league-schweiz/tabelle       </label>
           <br />
           <input
             required
@@ -108,7 +107,9 @@ Billard, Cheerleading, Flag Football, Frisbeesport, Kickboxen, Rettungsschwimmen
 
         <div style={{ marginBottom: 12 }}>
           <label>
-4. Nenne eine Stadt, wo die Expo (Weltausstellung) schon mal stattgefunden hat. 
+4. Für den Mai 2026 sind in Las Vegas die Enhanced Games geplant. Kurzum: Dort dürfen die Athletinnen und Athleten vollgedopt antreten: 
+
+Werdet ihr euch das Event anschauen (1) oder boykottieren(2)?
 
           </label>
           <br />
@@ -123,7 +124,9 @@ Billard, Cheerleading, Flag Football, Frisbeesport, Kickboxen, Rettungsschwimmen
         </div>
 
         <div style={{ marginBottom: 12 }}>
-5. Nenne zwei User, die sich überhaupt nicht ausstehen können. Oder es den Anschein macht, dass sie sich nicht abkönnen oder einen (oder mehrere) große Streitigkeiten hatten.      <br />
+5. 5. Wie lange wird es Sportforen als Forum noch geben? 
+
+A) maximal bis 2035 B) maximal bis 2045 C) maximal bis 2055 D) 2056 oder länger  <br />
           <input
             required
             value={q.q5}
